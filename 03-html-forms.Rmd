@@ -59,6 +59,10 @@ The `type` attribute specifies what type a control an input element needs to be.
 
     It shows a color picker, depending on how each browser supports the rendering of this element. Note that this control is not very accessible to screen reader users, therefore, another of the options on this list, or another of the elements we present in this chapter, must be used.
 
+* `<input type="date" />
+
+    Shows a date picker that allows users to select the month, day, and year; they are supported differently among browsers, but it is fairly accessible with screen readers.
+
 * `<input type="email" />`
 
     A box will be shown, which will only accept email addresses.
@@ -82,3 +86,4 @@ The `type` attribute specifies what type a control an input element needs to be.
 * `<input type="text" />`
 
     A generic text box will be shown. It accepts only one line of text.
+
