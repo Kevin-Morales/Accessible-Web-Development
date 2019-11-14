@@ -1,0 +1,386 @@
+# Content Elements
+
+In this chapter, we introduce HTML elements, and we give descriptions and examples for those elements designed to hold a particular type of content.
+
+## Introdduction to the Structure of HTML
+
+HTML is composed of tags and attributes. Tags and attributes both make up HTML elements. The tags of an HTML element tell a web browser what we would like to have displayed on a web page. Attributes are qualities about a particular element. They add information to an HTML element, making HTML tags more powerful.
+
+There are two types of tags. Self-closing, and nonself-closing tags. Most elements are composed of nonself-closing tags. The general format for nonself-closing tags and their attributes is shown below.
+
+~~~
+<tag attribute="value1" attribute="value2" attribute="value n">
+Content for a nonself-closing tag goes here.
+</tag>
+~~~
+
+The general format for a self-closing tag is as follows:
+
+~~~
+<tag attribute="value1" attribute="value2" attribute="value n"/>
+~~~
+
+There are attributes that do not need a value. So, the attribute is mentioned by itself after a particular tag. The general format in this case is `</tag>`.
+
+It is important that you type your tags and their associated attributes using lowercase letters. Otherwise, the web browser will not display your pages correctly. Furthermore, screen readers will encounter problems when reading the HTML given to it. You'll gain more understanding about HTML tags and attributes as you progress through this book. Don't worry if this is new to you. HTML is generally easy to grasp, and professional text editors will help you generate particular HTML elements. They even include suggestions as you type, which aid in the inclusion of attributes. Having said that, browsers are very "flexible" when it comes to HTML code; it will "try" to understand your code, but your code may fail to display silently if the HTML is not written correctly. The rest of a page may display as an entire heading if, for example, we forget to close the heading element. We now begin our journey towards writing sites an applications. First, we introduce HTML elements that aid in displaying information. In subsequent chapters, we introduce HTML elements that display forms and media. Along the way, our best attempt will be made to tie the elements we present to a particular case regarding accessibility.
+
+## A Note About Browser Events
+
+Before we begin our study of HTML, we'd like to talk about what happens when your website or application is read by a web browser. The following sequence of events take place when the browser loads a particular application or site:
+
+* HTML is read linearly.
+* The browser reads CSS code.
+* The browser reads and execute JavaScript code.
+
+It is worth commenting on the first bullet point. It means that HTML is read as each HTML is encountered. We must keep this in mind if we want our sites to perform well. If certain fragments of JavaScript code take a long time to run, there is a possibility that the HTML content may fail to render properly, or that a mobile browser freezes, a practice that is frowned upon in the mobile world.
+
+The above bullet points will also explain why certain HTML elements are placed in a certain location. This is also important when we consider accessibility scenarioes, as screen readers may encounter problems as a web page is changing. This is part of what people mean when they talk about taking accessibility into account when designing a system. As you can probably infer, accessibility is not just considered during the design phase, when sketches and diagrams are produced. It must be considered when a software developer is coding the product.
+
+## HTML Comments
+
+We begin our study of HTML by introducing comments. Comments tell other developers what our code is doing. You can write any sentence or paragraph you wish to inside of a comment; however, it's generally recommended that the sentences be related to a particular piece of code. The following is an example:
+
+~~~
+<!-- This is a comment that shows how to 
+explain HTML code to others. -->
+~~~
+
+To make an HTML comment, do the following:
+
+* Type a less-than sign, followed by an exclamation point, followed by two dashes, followed by a space for readability.
+* Then, type anything you want to say.
+* Finally, type two dashes, followed by a greater-than sign.
+
+This element must be used to document your code, as it is one of those "best practices" of software development.
+
+Next, we'll cover Hthree essential HTML elements.
+
+## The HTML, Head, and Body Elements
+
+	Every web page must have a head and a body element housed inside the HTML element. The following code shows what we are trying to accomplish; be sure to pay attention to the comments! Note that, except for the `head` element, most HTML elements must be inside the body element--anything your users will interact with, read, or perceive in some other way must be inside the body element. (This does not apply to the `footer` element, which will be studied later.)
+
+~~~
+<!-- Date created: September 2019 -->
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Next, we will specify the head of the document. -->
+<head>
+<!-- The head specifies a title for our page.
+It also specifies any external code we want to use, such as a CSS or a JavaScript library. -->
+</head>
+
+<body>
+<!-- Here, we specify all of the content we want to see on the page. -->
+</body>
+</html>
+~~~
+
+	Notice, after the first comment, that we specified the type of document we want to work with.
+`<!DOCTYPE html>` is required because browsers work with lots of different file types. Also, notice that we included the attribute `lang = "en"`. More on attributes later. For now, suffice it to say that this code fragment specifies the primary language we are using inside of our HTML elements; `en` means that we'll display our content in English.
+
+## The Meta Element and its Associated Attributes
+
+Meta elements must be the first type of element within the head element. They specify information that describes an HTML document. This is a self-closing tag, and therefore relies on attributes to be enhanced. We look at some of its attributes in the following sections.
+
+### The Charset Attribute{-}
+
+In the history of computers, there have been systems that assign numbers to letters, numbers, and other symbols. These are known as character encodings. One of these character encodings is known as UTF 8. The `charset` attribute specifies the type of encoding we'd like to use for displaying our pages. We must always use the UTF 8 encoding, for technical and accessibility purposes as well. Here's an example of how the head element must incorporate a meta element with the charset attribute:
+
+~~~
+<head>
+<meta charset="utf-8">
+</head>
+~~~
+
+### The Name and Content Attributes
+
+These attributes are used to specify values that help search engines find your pages, and/or information pertaining to mobile devices. We will explain the details of the following code in later chapters. For now, notice that these attributes are used in order to specify some information for mobile browsers.
+
+~~~
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+~~~
+
+## The Title Element
+
+	The `<title> </title>` element allows us to display the text between the opening and closing tags on the browser window, and it goes inside the head element. Screen readers read the text located inside the title element when you press Insert plus t, for example.
+The following code is an example of how to use the three essential HTML elements with a `<title> </title>` element included:
+
+~~~
+<!-- Date created: September 2019 -->
+<!DOCTYPE html>
+
+<!-- Next, we will specify the head of the document. -->
+<head>
+<!-- The head specifies a title for our page.
+It also specifies any external code we want to use, such as a CSS or a JavaScript library. -->
+<title>John's Electronics Store</title>
+</head>
+
+<body>
+<!-- Here, we specify all of the content we want to see on the page. -->
+</body>
+</html>
+~~~
+
+## The Link Element
+
+The link element is a self-closing tag, `<link />`. It specifies which CSS styles we need. The following code includes the Bootstrap framework into our pages. Again, do not worry about what's inside of the link element; it is enhanced with attributes, so you should notice that. We'll explain more when we cover CSS in later chapters.
+
+~~~
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>John's Electronics Store</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+~~~
+
+## The Script Element
+
+The script element specifies which JavaScript files our HTML applications and sites will utilize. It begins with `<script>`, and ends with `</script>`. They should be the last element type inside of the body element. We will now show code that will require J Query, Popper.js, and the JavaScript portion of Bootstrap. (Also, notice that we are deliberately doing this to set you up for what's to come in later chapters of the book.)
+
+~~~
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Sample Title</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+~~~
+
+Notice how we kept browser events in mind. Because of this, we specified information for our meta elements first, then we show the title that will be displayed on the browser window, and we specified all of our CSS afterwards. Also, notice that we specified our script elements in such a way that indicates that they should be the last thing the browser should look at. Also, the order in which you include scripts matter. Popper depends on J Query, so J Query is included first. Then Popper. Finally, the Bootstrap script, which depends on both Popper and J Query, is included last. Keep this in mind as you code your HTML pages. Errors relating to placing scripts in the wrong order can be subtle, as there is no accessible method to know where the error is located. Such errors can have you searching for weeks. For this reason, you should have a collection of HTML file templates, which we'll provide at the end of this chapter. For now, let's move on to the paragraph element.
+
+## The Paragraph Element.
+
+The paragraph element is used when you want to include a paragraph in your HTML document. A paragraph element begins with `<p>` and ends with `</p>`. The text we wish to display would be located within the opening and closing tags.
+
+~~~
+<p>This is an introductory paragraph about the Blind Developers Cafe.
+</p>
+~~~
+
+If you include this element in an HTML page, you've just secured easy navigation for users of assistive technology. Screen readers have aeither a keyboard shortcut or a touch gesture that allows a user to navigate by paragraph. This prevents a user from having to swipe to the right or use the Arrows or Tab keys to navigate complex web pages.
+
+## The Anker Element and its Associated Attributes
+
+Ankers are typically used to make a link on a web page. Links are used to transfer users to a different web page, or to a different site altogether. The following code shows a paragraph and a link working together to provide information about a reputable organization for the blind.
+
+~~~
+<p>
+The National federation of the blind helps blind individuals to discover their potential. Click
+<a id="nfbLink" href="https://www.nfb.org/">these words</a> to visit their website.
+</p>
+~~~
+
+Notice that we used the `href` attribute on the anker element to specify the web address that will take a user to the website of the National Federation of the Blind. This is the power of HTML attributes. Users of assistive technology have options to navigate quickly by link, either by bringing up a "links list," or by changing options on a touch rotor so that, when swiping vertically, the assistive technology can find the next link. We also used the `id` attribute, which allows us to uniquely identify this link. We are then able to talk to it from CSS or JavaScript code, if we wish to do so.
+
+## Lists and List Item Elements
+
+HTML supports ordered and unordered lists. You may use them when you wish to tell a user about the features of a product, for example. The unordered list element begins with `<ul>`, and ends with `</ul>`.
+The ordered list element begins with `<ol>`, and ends with `</ol>`. The list item element begins with `<li>`, and ends with `</li>`.
+ The following code shows how to create an unordered list of product qualities for a fictional software program for high-level Mathematics.
+
+~~~
+<p>
+Our program can help you perform the following:
+</p>
+<ul>
+<li>Plot functions from tabular data</li>
+<li>Simplify algebraic expressions</li>
+<li>Matrix operations</li>
+<li>Derivatives and integrals</li>
+<li>Linear regression</li>
+<li>And more...</li>
+</ul>
+~~~
+
+As previously stated, HTML supports ordered lists. They are used exactly the same as the HTML unordered lists, but instead of bullets, it displays numbers. If used successfully, users of assistive technology now have the options to navigate quickly by list or list item. One such common option is that the user can press the letter l on the keyboard to advance to the next list on the page, or Shift plus l to navigate to the previous one. Also, they can navigate by list item by pressing the letter i or the shortcut key Shift plus i on the keyboard. The following code shows an example of how the ordered list element can be used:
+
+~~~
+<!-- Note that the same list item element is used for unorderd and ordered list. -->
+<p>To install the program, follow these instructions:</p>
+<ol>
+<li>Download the program.</li>
+<li>Navigate to the folder where you saved it, and press Enter.</li>
+<li>Follow the prompts.</li>
+</ol>
+~~~
+
+## Heading Elements
+
+HTML supports content that is meant to be treated as a title, a subtitle, or a subsection of a book. It supports six heading levels, and the code for each of those elements is listed below:
+
+* `<h1> </h1>`
+* `<h2> </h2>`
+* `<h3> </h3>`
+* `<h4> </h4>`
+* `<h5> </h5>`
+* `<h6> </h6>`
+
+Headings are used, for example, when a site has an "about" section, and within that heading, there is a subsection called "our team." Heading elements are very important in accessible applications. Users of assistive technology can quickly navigate different sections of your web applications or sites, and find the information they need without having to look through all of the elements before it. In short, headings provide an outline-like structure to your web pages that is accessible to all persons who will have the good or bad experience, depending on how well you use these elements.
+
+## Sections and Articles
+
+Sections are used to divide HTML content into separate areas, such as an "about" section of a landing page. Section elements begin with `<section>`, and end with `</section>`. Section elements should contain at least one of the heading elements we talked about in the previous section. Here is an example of how the section element is used:
+
+~~~
+<section>
+<h3>About</h3>
+<!-- Content related to the "About" section goes here... --->
+</section>
+
+<section>
+<h3>Our Products</h3>
+<!-- Content relating to the products section goes here... -->
+</section>
+~~~
+
+Articles are used to group together content related to a blog post, a social network status, ETC. The article element begins with `<article>`, and ends with `</article>`. Like the section elements, articles should contain a heading. Some screen readers allow navigation by article, and actually announce whether a particular area of the page is, in fact, an article. Other screen readers allow navigation by region, and they treat the article element as such, allowing for quick navigation that supports keyboard and touch gestures. An example showing the usage of the article element is given below.
+
+~~~
+<article>
+<h2>This is the Title of my Post</h2>
+<p>Welcome to my post, in which I will tell you about the random things I do over my lunch breaks.</p>
+</article>
+~~~
+
+
+## Header Elements
+
+The header element is used to present introductory content. It typically contains a title, an optional subtitle, a logo, and a navigation bar. The header element begins with `<header>`, and ends with `</header>`. Headers are also used to provide introductory content for a section of a web page, but we recommend that you use the header element at the beginning of your web pages. Screen readers treat this element as a region, and will announce it as "banner." Shortucts and touch gestures are also assigned to navigate to them quickly. Here's an example of how it might be used:
+
+~~~
+<header>
+<h1>John Smith</h1>
+<h2>A Unique Software Developer</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About John</a></li>
+<li><a href="#">Contact John</a></li>
+</ul>
+</header
+~~~
+
+Notice that we incorporated some of the elements we have introduced in such a way that you will incorporate them in real-world situations. Note that, a list item can hold any element, and not just text. However, notice how we used the header element to add introductory elements to the site.
+
+## The Main Element
+
+The main element is used to indicate that a certain portion of a web page should be treated as content central to that page. Some links will have a link for screen readers with the words, Skip to Main Content. This is what such links refer to. The main element begins with `<main>`, and ends with `</main>`. Any section or article that is central to a particular page should be housed within this element. The main element, however, should be contained within the body element.
+
+## The Footer Element
+
+This element is used when copyright or related information needs to be added at the bottom of a page. It begins wih `<footer>`, and ends with `</footer>`. Here's an example:
+
+~~~
+<footer>
+Copyright (c) 2019, Lesley Meyers
+All Rights Reserved
+</footer>
+~~~
+
+The footer element is added outside of the body element.
+
+## Block Quotes and Citations
+
+To quote a source or another person, use the block quote element. It begins with `<blockquote>`, and ends with `</blockquote>`. Example:
+
+~~~
+<blockquote>
+<p>The slope of a line is rise over run></p>
+</blockquote>
+<p>This was said my Mrs. Math Teacher.</p>
+~~~
+
+Use the citation element to mention a book or any other important work> This element begins with `<cite>`, and ends with `</cite>`. Example:
+
+~~~
+<p>The book that I'll mention to you taught me many life-changing lessons.</p>
+<cite>The Insitutes by John Calvin</cite>
+~~~
+
+## Bold and Underlined Text.
+
+If you want to have the browser display text in bold, first write `<b>`, then the desired text, and `</b>`, to tell the browser when to stop displaying bolded text. Similarly, for underlined text, write `<u>`, then the desired text, then `</u>`.
+
+## Line Breaks and Separator Elements
+
+You can add a newline character (the equivalent of pressing Enter) to an HTML element by writing the line brak element:
+~~~
+</br>
+~~~
+
+Notice that this is a self-closing element.
+
+To add a horizontal line that separates content, you should add the `</hr>` self-closing tag between those elements you wish to separate.
+
+## Emphasized and Important Text Elements
+
+If you wish to emphasize a particular word or phrase, you can use the `em` element to do so. Here's an example that uses it to emphasize the word theorem:
+
+~~~
+<p>The word <em>theorem</em> is defined as a mathematical statement that can be shown to be true.</p>
+~~~
+
+If you wish to mark text as important, you can use the `strong` element. Here's an example:
+
+~~~
+<p>You may engage in theology and philosophy, but <strong>please be prudent when you do so</strong>.</p>
+~~~
+
+## The Disclamar Element
+
+There is an element that is used for disclamars or side comments that are spoken quickly in commercials, for example. This is known as the `small` element. Here's an example:
+
+~~~
+<p>This action figure can be operated via a remote control. <small>Batteries are not included with your purchase.</small> Get it now at your local store!</p>
+~~~
+
+## A Note About the Role Attribute
+
+The role attribute is used to provide information to assistive technologies about the "role" an element plays on a certain web page. This attribute is one of the many attributes that a developer must keep in his or her toolbox, as it will be used or talked about heavily later on.
+
+## The Div Element
+
+We will conclude this chapter by introducing the div element. It begins with `<div>`, and ends with `</div>`. This element is a generic one, and therefore any role can be assigned to it. It is an element that is used for any of the purposes not mentioned in the previous sections, or in the rest of this book. Divs are used as accessibility message logs, and/or they are styled with CSS for purposes of layout. Use divs when any of the above elements are not suited to what you wish to display on the page.
+
+~~~
+<!-- This is an example of the div element. -->
+<div id="accessibleMessageLog" role="log">
+This is an accessible message appended after a button was clicked.
+</div>
+~~~
+
+## Accessibility Tip
+
+All of the elements we have presented in this chapter have a default role. Screen readers have a certain way of announcing them or working with them somehow (e.g., assigning keyboard shortcuts, such as those mentioned on our paragraphs section). Therefore, it is best practice to use them wherever possible. Incorrect use of these elements will result in a poor usability experience. This also implies that you should never, ever change the role of these elements. These elements already have their intended role assigned to them. If you change the role of any of these elements, you may cause screen readers to announce certain elements in such a way that is inconsistent with the keyboard shortcut that a user is accustomed to. It is true that we live in an imperfect world, and that sometimes links are assigned the role of buttons, but one should strive for consistency wherever possible.
+
+## Summary
+
+We began the chapter by introducing some browser events that you should keep in mind while coding your web sites or applications. We then introduced a way to document your code in English for other developers. Throughout this chapter we introduced various elements that display content. In our next chapter, we'll introduce elements that belong in the category of interactivity and user interfaces.

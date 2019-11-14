@@ -1,0 +1,90 @@
+# (PART) THE HTML MARKUP LANGUAGE{-}
+
+# Preliminaries
+
+We begin our journey into web development by introducing the concept of the web, and why it was invented. We will then continue with some context for today's ecosystem of development tools such as build utilities, version control systems, and the tools found in modern browsers that aid in the development of web applications. In this chapter, we will also discuss a few web frameworks that are widely used today, and hopefully it will give you a glimpse of what you can expect to learn as chapters are added to this book. We'll then look at what you need to install on your computer to get started developing websites and applications.
+
+## A BriefHistory of the Web
+
+It all began with sir Tim Berners-Lee, a British computer scientist. He began by envisioning a way in which scientific research could be shared easily; at the time, documents were not accessible from one computer to another. Thus, he thought of the idea of the World Wide Web, and the HyperText Markup Language in particular.
+	In the year 1990, Tim Berners-Lee invented the language HTML, the HyperText protocol (which is a convention used to transfer HTML from one computer to another), and HTML editors and a browser, as well as a web server.
+
+As demands for web technologies was changing, new languages for the web entered the scene.
+	Håkon Wium Lie who worked at CERN began his work on CSS. You see, HTML provides  "default" look for paragraphs, links, and any other element of a web page. People who needed to customize their pages needed more, and this is what CSS offers. It offers a way to style documents such that each conveys the purpose for their creation. A newspaper could look like a newspaper; a contact form could look like a contact form.
+
+Later on, JavaScript entered the scene two years after CSS. JavaScript provided a way for web developers to create interactivity for their pages.
+	A decade later, people realized that they could write applications that everyone could use; some were doing it already (one example being Google). So, new standards were needed, and HTML 5 was developed. It introduced accessibility tags and attributes for HTML, media tags, and graphics. These new standards make it possible for the web to be used as the perfect cross-platform programming environment. Now, the web became the cloud, as services such as operating systems, word processors, and other types of systems are offered as an application written in HTML, CSS, and JavaScript. They are "served" using other programming languages such as PHP, C-Sharp, Java, and new ones such as Go and Rust.
+
+## Where we are Today
+
+We are living during times where the web has become the cloud. More and more applications are placed in huge computers known as servers, and very little is installed on the user's end. Over the years, many code packages known as libraries have been developed to ease the design of user interfaces such as contact forms or even help manuals. Many tools for managing different versions of software have been made to save memory and time for software developers. The web has become the best cross-platform tool for developing software. The web is not going anywhere any time soon, and the field is only growing as the days pass by. Therefore, the web is a promising field for blind people to develop a talent.
+
+## JavaScript Development Tools
+
+In this section, we want to tell you about some tools used by web developers. These are written in the JavaScript programming language and other system languages such as C and C++. The purposes of these tools range from building web projects, testing small code fragments, and even developing for web servers, to automating complex tasks, and managing code libraries.
+Although we'll encourage you to download some of these tools in this section, don't worry if you wish to skip the downloading process at this time. When these tools are referenced throughout this book, we'll make sure to include link to these tools, so you don't have to refer to this section later.
+In fact, we recommend that you first read a chapter to get a full picture of the activities you may need to do. Then, you may go back and follow such activities. Having said that, let's begin by looking at one tool that has become essential in the web development community.
+
+### Node JS{-}
+
+Node JS is a tool used via the commandline, and it allows us to install code and other commandline tools written by others. We'd like to give you the opportunity to
+[download Node JS](https://nodejs.org/en/download/) here.
+This will be the most foundational tool we will use to test JavaScript code, and automate our builds, among other things.
+
+### Visual Studio Code{-}
+
+This is a professional text editor that allows us to have multiple files open in different tabs. This is useful when we want to switch between writing HTML, CSS, and JavaScript. We encourage you to download
+[Visual Studio Code](https://code.visualstudio.com/download) at this time, since this is another tool we'll use later on as you progress through this book. This text editor is extensible, meaning that you can install packages that enhance the capabilities that come with it. You can even write your own extensions for it.
+
+### Grunt and Gulp{-}
+
+Grunt and Gulp are tools that allow us to automate tasks such as the compression of JavaScript files, and a process called concatination, where two or more files are merged into one, in order to improve delivery of our sites and applications. You may also include tasks that aid in the building of user help manuals, also known as software documentation.
+You may take a look at Gulp JS [here](https://gulpjs.com/), and you may also look at Grunt
+[here](https://gruntjs.com/).
+
+### Git{-}
+
+Git is known as a version control system, which keeps track of your source code. It is able to role back to a particular version if you happen to make crucial mistakes. It also supports branches, which you can create if you need to add features without touching working, production code which is located in the master branch.
+You may take a look at Git [here](https://git-scm.com/downloads).
+
+### Git Hub{-}
+
+Git Hub can be thought of as the social networking site for web and other types of software developers to collaborate on a particular project. You may check out Git Hub using [this link](https://github.com/).
+
+There are other tools specific to JavaScript, but we'll cover them in appropriate chapters. For now, let's look at what are known as frameworks, which bundle many capabilities in order to save time for web developers.
+
+## CSS and JavaScript Frameworks and Libraries
+
+Imagine having to develop a particular component of an application over and over again. Furthermore, imagine having to copy and paste code throughout your own codebases, making it harder to maintain them. The frameworks we'll mention here aid in eliminating such situations, and they can help you develop sites and applications quickly. These frameworks include utilities that would take a lot of time if you were to develop them yourself. Now, there are particular cases where frameworks would be an overkill, but most production software incorporate them. We recommend that you use these frameworks after learning HTML, CSS, and JavaScript, especially if you decide to create a business out of your web development skills.
+
+### J Query{-}
+
+J Query is a library developed by John Resig, a respected person in his field. You may read about J Query [here](https://jquery.com/). This library was developed at a time when web development was a painful endeavor, as web browser developers would create their own way of adding functions for acting on particular events such as clicks or key presses. J Query would present developers with a single command they can call to add code to take actions when such events occurred in their applications. Now, J Query is not as popular anymore, but since people used to incorporate it heavily, it is still a tool worth learning, since you may need to maintain one of the systems that use it.
+
+### Bootstrap{-}
+
+Bootstrap is a CSS framework that aids in the creation of applications and sites that incorporate elements such as buttons, text boxes, forms, and check boxes, among other controls. It uses a grid system where each row has twelve columns, perfect for blind developers to use!
+You may look at bootstrap [here](https://getbootstrap.com/).
+
+### Materialize {-}
+
+This is another CSS framework, which is similar to Bootstrap. However, this framework incorporates material design, a technique invented by Google. You can check out Materialize using [this link](https://materializecss.com/getting-started.html).
+
+### Reactand Vue{-}
+
+Let's add to the excitement by introducing you to React, a modern framework that aids in the development of single-page applications, a technique in which users can stay on one page to utilize an entire application. You can provide links to add for a settings section, a viewing section for business applications, and more, without having to wait for another page to load. This is convenient for users who need to view your software using a mobile device. You may read about React [here](https://reactjs.org/).
+
+A competitor to React is Vue. Vue is also a tool for writing fast, single-page applications. You can check out Vue [here](https://vuejs.org/).
+
+### Svelte{-}
+
+Svelte is a direct competitor to React and Vue. However, Svelte has the capability of updating the components of your application quickly. It let's you combine HTML, CSS, and JavaScript, as long as the code is related to the visual aspects of your application components. All of the code you write is placed into a file with the .svelte extension. Much of the work needed to be done in the web browser is done when the Svelte tool translate your .svelte file to proper HTML, CSS, and JavaScript files.
+You may read about Svelte [here](https://svelte.dev/).
+
+### Angular{-}
+
+Angular is used for enterprise-level applications, and developing with it is more involved. It is written using the [TypeScript](https://www.typescriptlang.org/) programming language, which is similar to JavaScript, but with additional features that check for certain qualities that prevent errors regarding the type of information your applications need. You may read about Angular [here](https://angular.io/). It is worth noting that Angular includes much more than utilities that aid in the visual aspects of applications. It includes, for example, a third-party code library that has a certain way of manipulating data.
+
+## Summary
+
+We looked at a short history of the web. Then, we considered topics related to the state of the web today, and which tools and frameworks are being used. In the next chapter, we'll look at HTML. We'll begin with a subset of HTML that helps you with displaying content such as articles and headings.

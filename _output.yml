@@ -1,0 +1,5 @@
+bookdown::gitbook:
+    sharing:
+      github: no
+      facebook: no
+twitter: no

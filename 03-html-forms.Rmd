@@ -1,0 +1,84 @@
+# Form Elements
+
+Forms are used to ask users for information, or to provide interactivity to cloud applications. As with the content elements discussed in the previous chapter, you should not change the role of these elements. Furthermore, these elements must be properly typed or generated for optimal accessibility.
+
+## The Form Element
+
+The form element is a container for the controls you may wish to display on a page. We show the structure of this element in the following code fragment:
+
+~~~
+<form>
+<!-- Form controls go here. -->
+</form>
+~~~
+
+## The Label Element
+
+The label element is used to give instructions to a user as to what to do when a certain control is present. It is used in conjunction with the `for` attribute which specifies the name of the control the label will be attached to. Here's an example of a form with a label, which will be attached to a text box later on in this chapter.
+
+~~~
+<form>
+<label for="firstNameBox">Please Enter First Name</label>
+<!-- To be continued> -->
+</form>
+~~~
+
+## The Input Element
+
+The input element is a self-closing element that is used in conjunctions with the `type` and `id` attributes. An example usage is as follows:
+
+~~~
+<input type="Type of control goes here" id="Name of element goes here." />
+~~~
+
+We'll now build on our previous example containing a label as follows:
+
+~~~
+<form>
+<label for="firstNameBox">Please Enter First Name</label>
+<input id="firstNameBox" />
+<!-- To be continued> -->
+</form>
+~~~
+
+This code essentially says, "Create a label that asks for a user's first name." "Afterwards, create a control and attach it to this label using the `id` attribute." The form is not ready to be displayed, however. This is because input controls need information about what type of control it needs to be. This will be the focus of our next section.
+
+### The Type Attribute on Input Elements
+
+The `type` attribute specifies what type a control an input element needs to be. This needs to be specified inside of the quotation marks, after the equals sign. The following list is should serve as a reference for the values that this attribute supports.
+
+* `<input type="button" />`
+
+    Shows a button on the screen. It is an easy way to express buttons in HTML code. (Note that there is also an HTML element, `<button> </button>`, which will be covered later.)
+
+* `<input type="checkbox" />`
+
+    Shows a check box for presenting several options that the user can select. We call this the "check all that apply" scenario.
+
+* `<input type="color" />`
+
+    It shows a color picker, depending on how each browser supports the rendering of this element. Note that this control is not very accessible to screen reader users, therefore, another of the options on this list, or another of the elements we present in this chapter, must be used.
+
+* `<input type="email" />`
+
+    A box will be shown, which will only accept email addresses.
+
+* `<input type="password" />`
+
+    This will render a box that will only accept password data.
+
+* `<input type="radio" />`
+
+    Shows a radio button, which is used for selecting only one of several options you wish to provide. (We'll cover how they should be placed on the page in a later section.)
+
+* `<input type="reset" />`
+
+    Shows a "reset" button that can be used to clear all of the data in a form.
+
+* `<input type="submit" />`
+
+    This will show a submit button, useful for sending forms to company databases, for example.
+
+* `<input type="text" />`
+
+    A generic text box will be shown. It accepts only one line of text.
