@@ -65,11 +65,19 @@ The `type` attribute specifies what type a control an input element needs to be.
 
 * `<input type="datetime-local" />`
 
-    Shows a date and time picker.
+    Shows a date picker that also allows a user to specify the time. It is not aware of time zones. As with the date input type, browsers may render it differently.
 
 * `<input type="email" />`
 
     A box will be shown, which will only accept email addresses.
+
+* `<input type="file" />`
+
+    Shows a "browse" button that, when pressed, brings up a file browser. This is usually used when applications ask users to upload a file.
+
+* `<input type="number" />`
+
+    Shows a box where users can type numbers only. (Restrictions and validations will be covered in a later chapter.)
 
 * `<input type="password" />`
 
@@ -79,15 +87,39 @@ The `type` attribute specifies what type a control an input element needs to be.
 
     Shows a radio button, which is used for selecting only one of several options you wish to provide. (We'll cover how they should be placed on the page in a later section.)
 
+* `<input type="range" />`
+
+    It shows a slider control in which a user can select from a specified interval (we save how you can specify more characteristics on the range input type for later).
+
 * `<input type="reset" />`
 
     Shows a "reset" button that can be used to clear all of the data in a form.
+
+* `<input type="search" />`
+
+    Shows a search edit box.
 
 * `<input type="submit" />`
 
     This will show a submit button, useful for sending forms to company databases, for example.
 
+* `<input type="tel" />`
+
+    Shows a box where a user can only type telephone numbers
+
 * `<input type="text" />`
 
     A generic text box will be shown. It accepts only one line of text.
+
+    * `<input type="time" />`
+
+        Shows a time picker.
+
+* `<input type="url" />`
+
+            Shows a box in which a user can only type website addresses.
+
+* `<input type="week" />`
+
+    Shows a slider-like control that allows a user to pick a week, numbered from one to fifty-two.
 
