@@ -6,6 +6,7 @@ description: "This book introduces a completely blind person to web development 
 url: https://bookdown.org/kevinmorales2114/web-book/
 site: bookdown::bookdown_site
 documentclass: book
+github-repo: Kevin-Morales/Accessible-Web-Development
 ---
 
 # Preface {-}

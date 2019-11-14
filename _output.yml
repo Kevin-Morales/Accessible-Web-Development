@@ -1,5 +1,15 @@
 bookdown::gitbook:
+  includes:
+  css: style.css
+  split_bib: FALSE
+  config:
     sharing:
-      github: no
-      facebook: no
-twitter: no
+      github: yes
+      facebook: yes
+      twitter: yes
+    download: false
+    toc:
+      collapse: subsection
+      before: |
+        <li><a href="./">Accessible Web Development</a></li>
+edit: https://github.com/Kevin-Morales/Accessible-Web-Development/edit/master/%s
