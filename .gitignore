@@ -1,3 +1,5 @@
-# Ignore any output filders that build.R creates.
 
+# Ignore any output folders that build.R creates.
 /_book
+/rsconnect
+*.rds

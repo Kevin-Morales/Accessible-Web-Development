@@ -2,11 +2,11 @@
 title: "Accessible Web Development"
 author: "Kevin Morales"
 date: "`r Sys.Date()`"
-description: "This book introduces a completely blind person to web development using HTML, CSS, and JavaScript."
 url: https://bookdown.org/kevinmorales2114/web-book/
 site: bookdown::bookdown_site
 documentclass: book
 github-repo: Kevin-Morales/Accessible-Web-Development
+description: "This book introduces a completely blind person to web development using HTML, CSS, and JavaScript."
 ---
 
 # Preface {-}

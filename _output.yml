@@ -10,6 +10,4 @@ bookdown::gitbook:
     download: false
     toc:
       collapse: subsection
-      before: |
-        <li><a href="./">Accessible Web Development</a></li>
-edit: https://github.com/Kevin-Morales/Accessible-Web-Development/edit/master/%s
+    edit: https://github.com/Kevin-Morales/Accessible-Web-Development/edit/master/%s
