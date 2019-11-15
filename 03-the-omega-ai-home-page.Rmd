@@ -1,0 +1,3 @@
+# The Omega AI Home Page
+
+In this chapter, we'll utilize some of the elements we looked at in [Chapter 2](#HTML Content)
