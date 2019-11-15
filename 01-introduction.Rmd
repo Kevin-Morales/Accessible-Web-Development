@@ -102,6 +102,10 @@ Another tool we'll need is Node JS, which can be obtained using [this link](http
 A third tool we need is git, which will help us keep track of all of the versions of a particular project.
 This tool can be downloaded from [here](https://git-scm.com/downloads).
 
+A final tool we need is a website, actually. You need to create an account on
+[Git Hub](https://github.com/).
+This tool will help collaborate with other software developers, as well as work on the incomplete code we give you. You can also host your own projects using this site.
+
 Keep in mind that we don't assume you know how to use these tools, or even how to configure them. We just want you to have them installed on your system, ready to fire them when we cover them.
 
 ## Summary
