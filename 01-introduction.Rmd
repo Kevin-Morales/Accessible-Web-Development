@@ -55,7 +55,7 @@ There are other tools specific to JavaScript, but we'll cover them in appropriat
 
 ## CSS and JavaScript Frameworks and Libraries
 
-Imagine having to develop a particular component of an application over and over again. Furthermore, imagine having to copy and paste code throughout your own codebases, making it harder to maintain them. The frameworks we'll mention here aid in eliminating such situations, and they can help you develop sites and applications quickly. These frameworks include utilities that would take a lot of time if you were to develop them yourself. Now, there are particular cases where frameworks would be an overkill, but most production software incorporate them. We recommend that you use these frameworks after learning HTML, CSS, and JavaScript, especially if you decide to create a business out of your web development skills.
+Imagine having to develop a particular component of an application over and over again. Furthermore, imagine having to copy and paste code throughout your own codebases, making it harder to maintain them. The frameworks we'll mention here aid in eliminating such situations, and they can help you develop sites and applications quickly. These frameworks include utilities that would take a lot of time if you were to develop them yourself. Now, there are particular cases where frameworks would be an overkill, but most production software incorporate them. We recommend that you use these frameworks after learning HTML, CSS, and JavaScript, especially if you decide to create a business out of your web development skills. People reach to these frameworks when they are low on time, and would like to deliver products as fast as possible.
 
 ### J Query{-}
 
@@ -84,6 +84,25 @@ You may read about Svelte [here](https://svelte.dev/).
 ### Angular{-}
 
 Angular is used for enterprise-level applications, and developing with it is more involved. It is written using the [TypeScript](https://www.typescriptlang.org/) programming language, which is similar to JavaScript, but with additional features that check for certain qualities that prevent errors regarding the type of information your applications need. You may read about Angular [here](https://angular.io/). It is worth noting that Angular includes much more than utilities that aid in the visual aspects of applications. It includes, for example, a third-party code library that has a certain way of manipulating data.
+
+We could have started by using some of these frameworks, but they always change, and new ones are constantly being cooked up. For this reason, we begin with the fundamentals; they may change in many ways, but HTML, CSS, and JavaScript are here to stay, and have been the standards of the web for a very, very long time. Knowing about these fundamentals will perhaps place you in a role where you are able to contribute to some of these frameworks, perhaps. We'd love for you to be able to do this; just make sure to tell us about it so we can celebrate.
+
+## What We'll Build and Getting Set up
+
+Throughout this book, we'll have sections that will ask you to build a project relating to a fictional artificial intelligence, web development, and robotics company we created for the purposes of this book. It's name is Omega AI. We'll pose a situation where there is a problem that you solve using the projects we build. Several of the chapters will include some aspect of these project; not all of them are going to be built at once. Also, the projects will introduce you to concepts known and utilized in the project management side of software development. We believe you should not only take away web development knowledge, but we'd love it if you become a well-rounded software engineer altogether. For this reason, our projects will range from building a simple section of a website, to making it look like a landing page. From adding code to a JavaScript file that will do something, to documenting it and add tests to verify that they work.
+For these projects, we'll use some tools we suggest for you to have on your computer. If you already have a tool of choice, you may replace our suggestions with something that you know it works, as long as that tool supports facilities for web and other types of software development.
+
+### Setting up{-}
+
+Our first tool we'll need is Visual Studio Code.
+This tool can be downloaded from [this site](https://code.visualstudio.com/download).
+
+Another tool we'll need is Node JS, which can be obtained using [this link](https://nodejs.org/en/download/). This will help us write JavaScript code, test it, and install other tools that will build, test, or document our code. (We'll install those other utilities as needed.)
+
+A third tool we need is git, which will help us keep track of all of the versions of a particular project.
+This tool can be downloaded from [here](https://git-scm.com/downloads).
+
+Keep in mind that we don't assume you know how to use these tools, or even how to configure them. We just want you to have them installed on your system, ready to fire them when we cover them.
 
 ## Summary
 
