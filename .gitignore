@@ -2,4 +2,9 @@
 # Ignore any output folders that build.R creates.
 /_book
 /rsconnect
+
+
+# Ignore files with extensions produced by build.R.
 *.rds
+*.epub
+*.pdf
