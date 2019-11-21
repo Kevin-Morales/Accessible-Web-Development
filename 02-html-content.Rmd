@@ -331,7 +331,8 @@ If you want to have the browser display text in bold, first write `<b>`, then th
 
 ## Line Breaks and Separator Elements
 
-You can add a newline character (the equivalent of pressing Enter) to an HTML element by writing the line brak element:
+You can add a newline character (the equivalent of pressing Enter) to an HTML element by writing the line break element:
+
 ~~~
 </br>
 ~~~
@@ -356,7 +357,7 @@ If you wish to mark text as important, you can use the `strong` element. Here's 
 
 ## The Disclaimer Element
 
-There is an element that is used for disclamars or side comments that are spoken quickly in commercials, for example. This is known as the `small` element. Here's an example:
+There is an element that is used for disclaimers or side comments that are spoken quickly in commercials, for example. This is known as the `small` element. Here's an example:
 
 ~~~
 <p>This action figure can be operated via a remote control. <small>Batteries are not included with your purchase.</small> Get it now at your local store!</p>
