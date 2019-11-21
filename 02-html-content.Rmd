@@ -354,7 +354,7 @@ If you wish to mark text as important, you can use the `strong` element. Here's 
 <p>You may engage in theology and philosophy, but <strong>please be prudent when you do so</strong>.</p>
 ~~~
 
-## The Disclamar Element
+## The Disclaimer Element
 
 There is an element that is used for disclamars or side comments that are spoken quickly in commercials, for example. This is known as the `small` element. Here's an example:
 
