@@ -318,7 +318,7 @@ To quote a source or another person, use the block quote element. It begins with
 <p>This was said my Mrs. Math Teacher.</p>
 ~~~
 
-Use the citation element to mention a book or any other important work> This element begins with `<cite>`, and ends with `</cite>`. Example:
+Use the citation element to mention a book or any other important work This element begins with `<cite>`, and ends with `</cite>`. Example:
 
 ~~~
 <p>The book that I'll mention to you taught me many life-changing lessons.</p>
