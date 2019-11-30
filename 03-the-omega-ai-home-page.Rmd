@@ -1,0 +1,9 @@
+# The Omega AI Home Page
+
+In this chapter, we'll utilize some of the elements we looked at in [Chapter 2](#HTML Content).
+
+To be more specific, we will take a break from learning HTML. This chapter will allow you to apply what you have learned in the previous chapter.
+You will learn about some tools you will need, then pose a challenge for you to build part of a home page for a fictional company.
+
+## The Basic Structure of a Web Page
+
