@@ -1,3 +1,44 @@
 # The Omega AI Home Page
 
-In this chapter, we'll utilize some of the elements we looked at in [Chapter 2](#HTML Content)
+In this chapter we will take a break from learning HTML, and focus on applying what we have learned so far, using the content elements.
+We'll introduce the basics of a web page design, which should provide totally blind persons a process for starting a new project.
+Afterwards, we'll learn the rudimentary hewristics necessary for well-designed products.
+Finally, we'll introduce a fictional software company, for which you'll create parts of a home page. (We'll add to this particular project as we progress through this book.)
+
+## The Basic Structure of a Web Page
+
+In this section, we present a sort of outline that may aid in the design of web pages. In fact, the items on this outline is a standard for all pages that you visit. They show up in some form or another. Without further due, here are the basic elements of a page:
+
+1.  Page header
+
+    A page header is a strip that goes across the top of a web page. It includes introductory content such as a title, a logo, a list of links to other sections of the web page, and an optional search edit field.
+
+2.  Main content
+
+    The main content of a web page must contain anything central to that page. If it is an article, it must contain the article itself. If it is a web application, it must contain all of the important items that users will interact with. You may include various sections within the main content, just make sure they are relevant. You must use the CSS language to place the main content on the left or on the right of your page.
+
+3.  Side content
+
+    Pages commonly have asides, where related links, advertisements, and simolar items can be found. This is complimentary content that must not be part of the main content section. Asides must be styled using the CSS language, so that they are placed either on the left or on the right of the page.
+
+4.  Page footer
+
+    Page footers specify copyright information, site maps, and other contents that indicate the end of a web page. They must be placed at the bottom of a page.
+
+As you can see, this is a very minimal, simple, but effective design.
+If you are a completely blind person, we recommend starting with writing down these four design elements. Afterwards, you can begin creating your HTML documents in such a way that conforms to this design.
+You may work on the header and its contents first, followed by the main section, and so on.
+Or, you may work on typing the relevant HTML elements that correspond to each step of this design. Then, you could work on filling out each element as you go along.
+Make sure to utilize the relevant content elements for a pleasant, accessible experience.
+Then, make sure to focus on content and only content.
+
+After you finish determining and typing all of your desired HTML content, you can focus on styling it with the CSS language. You focus on that portion of the project, and only that portion.
+Finally, you focus on the logic and all of the programming needed to make your pages work accordingly; you do this with the JavaScript language.
+
+Note that, as you go through this process, you may need to modify your HTML, CSS, and JavaScript to fit the specifics of your sites, pages, and applications.
+For example, your programming portion may need a div element to work correctly or make things easier on you.
+Your CSS may need a portion that can help out with your JavaScript programs.
+However, the four-step design presented above should be the basis for all your pages. This will give you a consistent place to start, eliminating uncertainty from yourself.
+
+## Introduction to Human Computer Interaction hewristics
+
