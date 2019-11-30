@@ -11,7 +11,10 @@ description: "This book introduces a completely blind person to web development 
 
 # Preface {-}
 
-Welcome to Accessible Web Development! Up to today, any type of graphics programming, or any kind of software development that is visual in nature is inaccessible to people with complete vision loss, for ovbious and nonovbious reasons. To complicate matters further, text editors are mostly written with sighted programmers in mind. Furthermore, it is estimated that seventy percent of the legally blind population is unemployed. Developers of software libraries write their documentation and manuals without descriptions, assuming that all who read such documentation always rely on visual input. This books is an effort to mitigate these issues, empowering completely blind individuals to seak employment, compete with sighted counterparts, and overcome challenges that are present in the field. This book is written by a blind person, for the blind community.
+Welcome to Accessible Web Development! Up to today, any type of graphics programming, or any kind of software development that is visual in nature is inaccessible to people with complete vision loss, for ovbious and nonovbious reasons.
+To complicate matters further, text editors are mostly written with sighted programmers in mind. Furthermore, it is estimated that seventy percent of the legally blind population is unemployed.
+Developers of software libraries write their documentation and manuals without descriptions, assuming that all who read such documentation always rely on visual input.
+This book is an effort to mitigate these issues, empowering completely blind individuals to seak employment, compete with sighted counterparts, and overcome challenges that are present in the field. This book is written by a blind person, for the blind community.
 
 ## Who This Book is for{-}
 
@@ -32,22 +35,28 @@ Next,we will cover JavaScript. This language adds logic to our applications and 
 After JavaScript, we'll cover APIs (application programming interfaces), which are fragments of code that other programmers have written in order for us to leverage their functionality. We'll first look at a standard known as the Document Object Model, which developers utilize to think about HTML documents. Then, we will use J Query, a library for accomplishing many tasks quicker and for making our code compatible with every browser.
 We will then work with CSS, and study tools that aid in creating user interfaces. CSS allows us to style our HTML documents. It has the capability to add colors, animations, and fonts to our sites.
 
+Afterwards, we'll cover topics in software engineering, including software project management, building and testing software projects, documentation of software projects, and more.
+
 ## Book Features{-}
 
-The book will provide real-world projects for readers to work on. Terms such as agile methodology, test driven development, version control, and others will be introduce; we'll use them heavily in the projects and problems we pose.
+The book will provide real-world projects for readers to work on.
+Terms such as agile methodology, test driven development, version control, and others will be introduced; we'll use them heavily in the projects and problems we pose.
 Some chapters will provide references for readers to research a topic further and verify the book's content, if so desired. Heavy emphasis will be placed upon accessibility, and the impact that a line of code may have regarding the usability of a web page.
 
 ## Overview of Tools we Will Use{-}
 
-Keep in mind that these are just some of the tools we'll need. Other tools will be introduce as we progress through the book. Our first examples and projects will utilize basic text editors such as Notepad. We will then upgrade to Visual Studio Code, a modern text editor from Microsoft; it is the best in software development tools, and it is accessible.
+Keep in mind that these are just some of the tools we'll need. Other tools will be introduced as we progress through the book. Our first examples and projects will utilize basic text editors such as Notepad. We will then upgrade to Visual Studio Code, a modern text editor from Microsoft; it is the best in software development tools, and it is accessible.
 Note that there are other editors such as EdSharp, which is written by a blind developer. However, Visual Studio Code is known to sighted developers, and the more we are able to adapt to the sighted world, the better.
 We will also use Git. Git is what's known as a version control system. This helps us avoid having to make copies of folders holding the same project, when only a few changes were made. Also, if we make mistakes, it is easy to travel back in time to the version of our projects that do not contain those previously made mistakes.
 Then, we will make use of Node, which will help us develop JavaScript code, and runs on servers (but we'll install it on our own computers). Finally, we'll use Git Hub, a website for publishing our code in the form of what are called repositories.
 
-## About the Author{-}
+## About the Author(s){-}
+
+### Kevin Morales' Bio{-}
 
 I'm Kevin Morales. I'm pursuing a B.S. in Computer Science; I have acquired an associate's degree, and a minor in Mathematics. I'm also blind, and I believe blind persons should be taught by the blind. I came into this field with exactly that goal in mind.
 
 My interests include web development, data science, artificial intelligence, concurrency, parallel computing, mathematics, and databases. My interests outside of computer science include playing the keyboard and theology... And food!
 
 I hope you, the reader, enjoy this book, as much as I enjoy sharing my knowledge with you. Many thanks in advance for your interest and the time that you put into it.
+If you decide to contribute to this project, please update this section with your own "bio."
