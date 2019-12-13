@@ -16,6 +16,11 @@ To complicate matters further, text editors are mostly written with sighted prog
 Developers of software libraries write their documentation and manuals without descriptions, assuming that all who read such documentation always rely on visual input.
 This book is an effort to mitigate these issues, empowering completely blind individuals to seak employment, compete with sighted counterparts, and overcome challenges that are present in the field. This book is written by a blind person, for the blind community.
 
+## Issues to be Solved{-}
+
+Blind persons are capable and full of potential. However, it is imperative that web development tutorials and books are produced in such a way that shows how to put up online portfolios and other websites that showcase their work.
+Furthermore, there are many courses and tutorials that teach web development, but they are not as descriptive or as detailed as they could be, and the information is spread out in such a way that forces learners to waste time finding it. This book provides descriptions of what a particular line of code does when using HTML and CSS, so that completely blind persons have a point of reference, in order to develop sites and applications with some level of confidence. Sighted assistance may be needed from time to time, but the goal of this book is to strive for a comfortable level of independence. The promise this book makes to readers is empowerment.
+
 ## Who This Book is for{-}
 
 This book is for you if...
@@ -24,6 +29,7 @@ This book is for you if...
 * you are in the field of accessibility and would like to understand web technologies from a developer's point of view;
 * you design experiences and user interfaces;
 * you Would like to communicate with software developers effectively, and clarify any accessibility problems;
+* you have an idea you'd like to showcase online;
 * you are a motivated, curious reader willing to learn.
 
 ## What This Book Will Cover {-}
