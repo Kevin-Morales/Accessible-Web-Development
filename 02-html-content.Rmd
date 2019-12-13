@@ -296,7 +296,7 @@ The main element is used to indicate that a certain portion of a web page should
 
 ## The Footer Element
 
-This element is used when copyright or related information needs to be added at the bottom of a page. It begins wih `<footer>`, and ends with `</footer>`. Here's an example:
+This element is used when copyright or related information needs to be added at the bottom of a page. It begins with `<footer>`, and ends with `</footer>`. Here's an example:
 
 ~~~
 <footer>
@@ -315,14 +315,14 @@ To quote a source or another person, use the block quote element. It begins with
 <blockquote>
 <p>The slope of a line is rise over run></p>
 </blockquote>
-<p>This was said my Mrs. Math Teacher.</p>
+<p>This was said by Mrs. Math Teacher.</p>
 ~~~
 
 Use the citation element to mention a book or any other important work This element begins with `<cite>`, and ends with `</cite>`. Example:
 
 ~~~
 <p>The book that I'll mention to you taught me many life-changing lessons.</p>
-<cite>The Insitutes by John Calvin</cite>
+<cite>The Institutes by John Calvin</cite>
 ~~~
 
 ## Bold and Underlined Text.
