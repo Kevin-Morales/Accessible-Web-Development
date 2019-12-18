@@ -1,0 +1,232 @@
+# Form Elements and Further Reading
+
+Forms are used to ask users for information, or to provide interactivity to cloud applications. As with the content elements discussed in the previous chapter, you should not change the role of these elements. Furthermore, these elements must be properly typed or generated for optimal accessibility.
+
+## The Form Element
+
+The form element is a container for the controls you may wish to display on a page. We show the structure of this element in the following code fragment:
+
+~~~
+<form>
+<!-- Form controls go here. -->
+</form>
+~~~
+
+## The Label Element
+
+The label element is used to give instructions to a user as to what to do when a certain control is present. It is used in conjunction with the `for` attribute which specifies the name of the control the label will be attached to. Here's an example of a form with a label, which will be attached to a text box later on in this chapter.
+
+~~~
+<form>
+<label for="firstNameBox">Please Enter First Name</label>
+<!-- To be continued> -->
+</form>
+~~~
+
+## The Input Element
+
+The input element is a self-closing element that is used in conjunction with the `type` and `id` attributes. An example usage is as follows:
+
+~~~
+<input type="Type of control goes here" id="Name of element goes here." />
+~~~
+
+We'll now build on our previous example containing a label as follows:
+
+~~~
+<form>
+<label for="firstNameBox">Please Enter First Name</label>
+<input id="firstNameBox" />
+<!-- To be continued> -->
+</form>
+~~~
+
+This code essentially says, "Create a label that asks for a user's first name." "Afterwards, create a control and attach it to this label using the `id` attribute." The form is not ready to be displayed, however. This is because input controls need information about what type of control it needs to be. This will be the focus of our next section.
+
+### The Type Attribute on Input Elements
+
+The `type` attribute specifies what type a control an input element needs to be. This needs to be specified inside of the quotation marks, after the equals sign. The following list is should serve as a reference for the values that this attribute supports.
+
+* `<input type="button" />`
+
+    Shows a button on the screen. It is an easy way to express buttons in HTML code. (Note that there is also an HTML element, `<button> </button>`, which will be covered later.)
+
+* `<input type="checkbox" />`
+
+    Shows a check box for presenting several options that the user can select. We call this the "check all that apply" scenario.
+
+* `<input type="color" />`
+
+    It shows a color picker, depending on how each browser supports the rendering of this element. Note that this control is not very accessible to screen reader users, therefore, another of the options on this list, or another of the elements we present in this chapter, must be used.
+
+* `<input type="date" />`
+
+    Shows a date picker that allows users to select the month, day, and year; they are supported differently among browsers, but it is fairly accessible with screen readers.
+
+* `<input type="datetime-local" />`
+
+    Shows a date picker that also allows a user to specify the time. It is not aware of time zones. As with the date input type, browsers may render it differently.
+
+* `<input type="email" />`
+
+    A box will be shown, which will only accept email addresses.
+
+* `<input type="file" />`
+
+    Shows a "browse" button that, when pressed, brings up a file browser. This is usually used when applications ask users to upload a file.
+
+* `<input type="number" />`
+
+    Shows a box where users can type numbers only. (Restrictions and validations will be covered in a later chapter.)
+
+* `<input type="password" />`
+
+    This will render a box that will only accept password data.
+
+* `<input type="radio" />`
+
+    Shows a radio button, which is used for selecting only one of several options you wish to provide. (We'll cover how they should be placed on the page in a later section.)
+
+* `<input type="range" />`
+
+    It shows a slider control in which a user can select from a specified interval (we save how you can specify more characteristics on the range input type for later).
+
+* `<input type="reset" />`
+
+    Shows a "reset" button that can be used to clear all of the data in a form.
+
+* `<input type="search" />`
+
+    Shows a search edit box.
+
+* `<input type="submit" />`
+
+    This will show a submit button, useful for sending forms to company databases, for example.
+
+* `<input type="tel" />`
+
+    Shows a box where a user can only type telephone numbers
+
+* `<input type="text" />`
+
+    A generic text box will be shown. It accepts only one line of text.
+
+    * `<input type="time" />`
+
+        Shows a time picker.
+
+* `<input type="url" />`
+
+            Shows a box in which a user can only type website addresses.
+
+* `<input type="week" />`
+
+    Shows a slider-like control that allows a user to pick a week, numbered from one to fifty-two.
+
+## Navigation Bars
+
+HTML supports navigation bars. You can start a navigation bar with `<nav>`, and end it with `</nav>`. This element is used to provide a way to hold everything necessary for the quick navigation from one section of a page to another.
+Normally, a navigation bar contains an `ul` (unordered list element) which in turn contain `li` (list item elements), which then contain `a` (anker elements).
+
+# Buttons
+
+HTML buttons begin with `<button>`, and end with `</button>`.
+Inside of the button element, you can add text so that it users know what action to take. You can also add the line `type = "submit"` between the word button, and the greater-than symbol when you type the beginning portion of this element. Here's an example:
+
+~~~
+<button type = "submit">Send Information</button>
+~~~
+
+## Combo Boxes and Option Elements
+
+Combo boxes allow users to choose from various options you provide via databases or other data sources. To make a Combo box, you begin with `<select>`, followed by various options, followed by `</select>`.
+To add options to a Combo box, you begin with `<option value="">`, followed by some text, followed by `</option>`.
+The following is an example of a Combo box:
+
+~~~
+<label for="ingredients">Choose Pozza ingredients</label>
+<select id="ingredients">
+<option value="pepperoni">Pepperoni</option>
+<option value="ham>Ham</option>
+<!-- More options would go here. -->
+</select>
+~~~
+
+## Control Groups
+
+There are cases in which check boxes need to be grouped together within a form. Set fields are used for this.
+As weith other elements, we begin with its opening tag, followed by a heading that with instructions for the controls to be grouped, followed by the controls and their labels, followed by the closing tag.
+To add a heading at the top of our field set, we use `<legend>` `</legend>`.
+Here's an example:
+
+~~~
+<fieldset>
+<legend>Choose the size of your family:</legend>
+<label for="smallFamily">I have a small family.</label>
+<input type="radio" name="familySize" id="smallFamily" value="small"> <br>
+<label for="largeFamily">I have a large family.</label>
+<input type="radio" id="largeFamily" name="familySize" value="large"> <br>
+<label for="check1">I am a child.</label>
+<input type="checkbox" id="check1" value="child"/> <br>
+<label for="check2">I am a robot fan.</label>
+<input type="checkbox" id="check2" value="fan"/> <br>
+</fieldset>
+~~~
+
+The `name` attribute indicates that we want the elements with that attribute to have a relationship, not just a visual grouping of those elements.
+
+## Text Areass and Editable Elements
+
+Text areas allow users to enter multiple lines of text.
+It has an opening tag, `<textarea>`, and a closing tag, `</textarea>`.
+The `rows` and `cols` attributes specify how many characters are visible per line, and how many lines are visible at a time.
+For example:
+
+~~~
+<textarea cols="80" rows="30">
+</textarea>
+~~~
+
+This example would tell the browser that we'd like 80 letters or other symbols per line, and that we'd like 30 lines to be visible at a time.
+
+We can also make any HTML element editable by adding the content editable attribute to it, `contenteditable="true"`.
+
+## HTML Resources
+
+As one can see, HTML has many elements, and this topic alone cannot be covered completely.
+However, we can point you to many links that can lead you to many other types of HTML elements such as those used for multimedia.
+By now, you are probably familiar with the HTML pattern: Elements can have both opening and closing tags, or they can be self-closing elements.
+Referring to the resources we provide here should not be a problem to you by now.
+Having said that, let's have a look at some sources for more HTML elements:
+
+* [Mozilla Developers Network Media Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding)
+
+    This guide shows you how to add multimedia content to your web pages.
+
+* [W3 Schools Media Guide](https://www.w3schools.com/html/html_media.asp)
+
+    This is a guide written by the World Wide Web Consortium.
+
+
+
+## Accessibility Tip
+
+Sometimes we require certain information to be entered, and HTML supports this situation by adding a `required` attribute to our controls.
+Here is a short example:
+
+~~~
+<label for="fullname">* Enter your full name</label>
+<input id="fullname" type="text" required/>
+~~~
+
+Adding the `required` attribute, along with an asterisk at the beginning of the label, increases the accessibility of forms. Screen readers will be able to work with this pattern seemlessly.
+
+## Summary
+
+This chapter looked at various types of controls that are used in forms, and included links for exploring more HTML elements such as multimedia widgets. Note that the elements studied in this and the previous chapter, can be utilized to create sophisticated web applications, not just typical widgets such as contact sections on web pages.
+
+Our next chapter will cover the CSS language.
+We'll also introduce CSS frameworks and libraries, which allow completely blind persons to lay out a web page using HTML attributes.
+We encourage you to explore the resources that were mentioned in the book so far;
+reading manuals is another essential skill developers must have in order to learn new technologies.
+Plus, you can be confident that the resources provided here are fairly accessible to screen readers.
