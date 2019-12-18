@@ -1,4 +1,4 @@
-# (PART) THE HTML MARKUP LANGUAGE{-}
+# (PART) THE HTML and CSS LANGUAGES{-}
 
 # Preliminaries
 
