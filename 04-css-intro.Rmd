@@ -1,4 +1,4 @@
-# Introductory CSS
+# Introductory CSS Concepts
 
 
 As we learned in our previous two chapters, the role of HTML is to describe the type of content we wish to have on a web page, and the impact if can have on screen readers when HTML elements and their attributes are used correctly or incorrectly.
@@ -8,7 +8,8 @@ We will begin by describing a few preliminary concepts.
 Afterwards, we'll introduce a CSS framework called Bootstrap, so we can get an idea of what is possible with CSS.
 We'll then introduce the structure of CSS, and we'll end with resources on various CSS frameworks.
 Along the way, we'll have case studies, so that visual concepts can be grasped better. For example, we'll look at how CSS is used to present a web application called JS Lint, targeted to computer programmers.
-By the end of this chapter, you should be able to read and write CSS, understand crucial visual concepts, and navigate manuals for various CSS frameworks and libraries.
+By the end of this set of chapters, you should be able to read and write CSS, understand crucial visual concepts, and navigate manuals for various CSS frameworks and libraries.
+As you can see, we'll take a top-down approach.
 
 ## What is a Style Sheet?
 
@@ -16,5 +17,95 @@ A style sheet is simply a set of rules that tell a web browser how HTML elements
 Your favorite web browser comes with a default style sheet for every HTML element. We need style sheets so that our pages don't look as boring as the default style included with our browser of choice.
 In order to make a style sheet, we first need to have a few ideas in mind, and this is where we begin to talk about two crucial topics: the page flow and the box model.
 
-## Content Flow and the Box Model
+## The Normal Flow of an HTML Document
+
+We would like to have your undivided attention in this section, because we'll cover concepts that are crucial for understanding what's happening on the screen when we put up a web page. Those of us who are blind will find this section helpful, as it provides a reference point for knowing what visual settings to modify with CSS.
+So, what is the normal flow of a web page?
+
+You see, HTML elements are placed on a web page in the order we wrote them in. Think of the page on a notebook; each letter and paragraph is arranged from top to bottom. The paragraphs take up the entire width of the page, and the sentences and lines in the paragraphs are as long as they need to be.
+This is also the case with many of the HTML elements you may wish to use for your web pages: Each element is placed below the other as they are read from a file.
+This is what is called the normal flow of the document. In later sections, we'll learn that it is totally possible to break the normal flow of an HTML document. We can break it in such a way that causes HTML elements to be placed to the right, to the bottom left, or wherever we wish to place them.
+Breaking the flow of an HTML document is necessary to achieve interesting layouts that are visually engaging and appealing.
+Now, let's add another concept to build on what we just introduced.
+
+By now, you know that HTML elements can have other HTML elements inside of them. The outer elements are known as parent elements, while the inner elements are known as the children of the parent element. For example, we mentioned that the form element can hold input elements. The form element is the parent of those input controls. List items are children of the unordered or the ordered list elements. The body and the head elements are the children of the HTML element.
+Now, let's add a third concept to this picture.
+(You may pause and reflect on these ideas if you need to.)
+
+## The Box Model
+
+Every HTML element can be considered a square, which is more appropriately referred to as a box in CSS terminology. Such boxes have four crucial properties that control how they look on a page, and they are as follows:
+
+* Border
+* Display
+* Margin
+* Padding
+
+Let's look at what each of these mean.
+
+### Border{-}
+
+A border is the set of lines drawn on each side of a box. We can specify how thin or how thick we'd like it to be, whether we'd like it to be round such that the browser shows a circle instead, whether we'd like it to be made up of dashed, dotted, or solid, straight lines, and so on.
+
+### Display{-}
+
+When we talk about an element's display value, we are reffering to how an element should behave when placed on a web page.
+Some of the common options that can be set on an HTML element as display values include:
+
+* Display block:
+
+    This means that an element will be displayed on its own line, and will stretch to the right and to the left as far as it can. Block elements also have have space above and below other elements. Forms, paragraphs, and headers are examples of elements whose display value is block by default.
+
+* Display flex:
+
+    This option displays an element as a flexible box: One that can shrink and grow according to other characteristics we specify for that particular element.
+
+* Display grid:
+
+    Setting this option will cause an element to show up as a structure that has rows and columns.
+
+* Display inline:
+
+    This means that an element shows up on the same line as other elements would. Some examples of inline elements include links, spans, and individual letters.
+
+* Display inline-block:
+
+    Inline-block elements show up on the same line as other elements would, but one is able to specify a height for that element.
+
+It is important to note that, by default, HTML elements have a display value of either block or inline.
+
+## Margin{-}
+
+The margin of a box refers to how close or how far that box should be placed from other elements. When we write on a piece of paper, we sometimes leave some empty space between paragraphs. This is known as the margin, and can be set on all four sides of an HTML element.
+To state it differently, margins are a way to specify how much space should be between the boxes.
+
+### Padding{-}
+
+Padding refers to how much space should be between the edges of a box and the text within that box. Consider how you sometimes have to leave space between the edge of a piece of paper, and the text you wish to write on it; if there decided to not have any padding on that piece of paper, you'd be writing right on the very edge of the paper, which would looks as if the text is overflowing.
+So, padding is the space between the edges of an element and the text within that element, whereas margin is the space between an element and the edges of other elements on the page.
+
+Note that borders, margins, and padding are specified using units of measurements specific for web pages.
+
+## Summary{-}
+
+Every HTML element is a box that is placed below other elements by default; this is known as the normal flow.
+Elements that contain other elements are known as the parents, whereas the elements within parent elements are known as the children of the parent elements.
+HTML elements are viewed as boxes when working with CSS.
+Boxes have borders, displays, margins, and padding.
+Borders refer to the lines around the perimeter of a box, and can be solid, dashed, ETC, or they can change in shape.
+Elements can be displayed on the same line (inline), as blocks, as inline blocks ( with a specific height), as flexible boxes, or as grids.
+Properties that make up the box model are specified using units that are specific to web pages.
+
+## A Handy Source for Box Model Properties
+
+We would like to point you to a resource by the World Wide Web Consortium that is very useful for knowing the default values for HTML elements regarding each of the box model properties.
+Click the address below to access it:
+
+[https://www.w3schools.com/cssref/css_default_values.asp](https://www.w3schools.com/cssref/css_default_values.asp)
+
+This source also talks about other properties that we'll study later on in this chapter. Make sure you save it somewhere, just in case you need to refer to it later on.
+In fact, we recommend you study it before continuing on to the next section. If you are completely blind, this is definitely something to keep in your toolbox.
+Also, make sure to take a break if you need it; there were lots of moving parts in this section, so we recommend that you recharge, so yu can continue to the next section.
+
+## Introduction to CSS Frameworks
 
