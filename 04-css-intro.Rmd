@@ -1,0 +1,20 @@
+# Introductory CSS
+
+
+As we learned in our previous two chapters, the role of HTML is to describe the type of content we wish to have on a web page, and the impact if can have on screen readers when HTML elements and their attributes are used correctly or incorrectly.
+In this chapter, we will learn about a language that makes it possible for HTML elements to look a certain way on a page.
+The language we'll learn is known as CSS, an abbreviation for Cascading Style Sheets.
+We will begin by describing a few preliminary concepts.
+Afterwards, we'll introduce a CSS framework called Bootstrap, so we can get an idea of what is possible with CSS.
+We'll then introduce the structure of CSS, and we'll end with resources on various CSS frameworks.
+Along the way, we'll have case studies, so that visual concepts can be grasped better. For example, we'll look at how CSS is used to present a web application called JS Lint, targeted to computer programmers.
+By the end of this chapter, you should be able to read and write CSS, understand crucial visual concepts, and navigate manuals for various CSS frameworks and libraries.
+
+## What is a Style Sheet?
+
+A style sheet is simply a set of rules that tell a web browser how HTML elements should look on a page.
+Your favorite web browser comes with a default style sheet for every HTML element. We need style sheets so that our pages don't look as boring as the default style included with our browser of choice.
+In order to make a style sheet, we first need to have a few ideas in mind, and this is where we begin to talk about two crucial topics: the page flow and the box model.
+
+## Content Flow and the Box Model
+
