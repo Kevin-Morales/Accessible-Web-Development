@@ -1,0 +1,291 @@
+# Introduction to CSS Frameworks
+
+A CSS framework is a library of CSS code that allows us to create sites and applications without having to write as much CSS as we would have if they didn't exist. They allow us to work with HTML elements and attributes and hide the complexity of CSS code elsewhere. We will introduce the most popular framework at the time of writing. It is called Bootstrap.
+Before we do so, however, we'd like to make two cases for CSS frameworks: One is the case for frameworks from the point of a software developer, and the other case will target those of us who are completely blind.
+We hope this chapter will be as exciting to you as it is to us.
+Also, we are introducing frameworks now so you can get started developing the visuals for your applications with a high level of confidence.
+Finally, this is a hands-on chapter, so hopefully you can find some time to follow along, thiugh in many cases, some steps will show the code you should have up to that point, as well as a frame that shows the live version of the document.
+
+## Aside: The Difference Between Developers and Designers
+
+We'll take some time to tell you about the difference between web developers and designers. Web designers draw wireframes to communicate to developers what they wish to see on screen. Web developers translate such diagrams into code. Many CSS frameworks are targeted towards developers who wish to create user interfaces quickly, so that businesses can rely on developers for quick deliverables.
+This book is written from a developer's point of view, so you'll see emphasis on code and designing systems at the code level, not at the level of visuals.
+Furthermore, a user interface is what is displayed on screen: buttons, check boxes, editable controls, and so on.
+
+## A Developer's Case for Using CSS Frameworks
+
+Sometimes, a developer may not have access to a designer, or he / she is on a tight budget. Furthermore, developers need to deliver quickly, and there is no time to design the components that are displayed on the screen. CSS frameworks aid in mitigating the issues posed by these types of scenarioes and situations. As with any business, time is money, and applications need to be developed quickly. Developers can use the components included in the framework.
+
+Frameworks can also be used for prototyping a piece of software. They are a great tool to have a proof of concept that developers can showcase. Finally, frameworks reduce the amount of code a developer has to test, since frameworks are tested by their respective developers.
+
+## A Blind Person's Case for Using Frameworks
+
+As stated earlier, frameworks include components and other widgets that take care of the visual aspects of an application or site. Thus, a blind person can independently develop an application without much visual feedback from others. Frameworks increase confidence in the fact that an application will look right on the devices in which they will be displayed. After knowing a few things about a particular framework, a blind person can just include the framework and choose the appropriate HTML elements to style. Using the `class` attributes and the right values to give to this attribute, a completely blind developer is on his or her way to develop a stylish, sophisticated user interface.
+For some who lost their sight later in life, this may be irrelevant. However, those of us who have been blind since birth will appreciate CSS frameworks a lot.
+Having said all of that, let's look at what Bootstrap has to offer.
+
+## Getting Started With Bootstrap
+
+Bootstrap includes components that allow us to develop applications that adapt to different screen sizes. This is known as responsive design. Some of these components are listed below:
+
+* Fixed and fluid containers
+* A powerful grid system
+* Various margin, padding, and border utilities
+* Widgets such as input controls, forms, and navigation bars
+* And much more,...
+
+We'll be referring to the Bootstrap documentation during the course of the rest of this chapter, so we'd like to take a moment to encourage you to click on the web address below to access it:
+
+[https://getbootstrap.com/docs/4.4/getting-started/introduction/](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+
+If you would like, you can bring up Visual Studio Code so you can follow along. Think of this as your first experience coding professionally.
+
+You may also create a folder named `chapter05-examples`. Once you have Visual Studio Code opened, press Control + k or Command + k, followed by Control + o or Command + o.
+This will bring up a dialog that will help you navigate and open the folder you created a moment ago.
+Once you find it, tab over to the "select" button and press Enter to open the folder.
+You are now ready to press either Control +n or Command + n to open a new file.
+Save it as `index.html`, since this will be recognized by your web browser of choice as being the first page of your site or application. (In fact, all sites and aplications have an `index.html` file.) Finally, we'd like you to have opened the web page containing the default CSS values, which was given to you at the end of the previous chapter.
+Here it is once more:
+
+[https://www.w3schools.com/cssref/css_default_values.asp](https://www.w3schools.com/cssref/css_default_values.asp)
+
+## Obtaining the Starter Template
+
+Assuming you have the Bootstrap documentation opened, find the heading labeled "Starter template."
+(Users of JAWS and NVDA may press h to find this heading;
+VoiceOver users may press Control + Option + Command + h.)
+
+Let's keep reading untill we arrive at a button that reads "Copy."
+Let's press Enter there. At this point, we are ready to return to Visual Studio Code and paste what we just copied.
+You should have the following code pasted on your editor:
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+~~~
+
+## Fluid and Fixed-width Containers
+
+Bootstrap has two types of containers. Fluid containers stretch across the width of the viewport. The viewport is the area of the browser window that is used to display a page. In other words, the viewport refers to the browser widnow minus the browser menus.
+
+Another type of container supported by bootstrap is fixed-width, which grows only when the screen size changes. This type of container also helps with centering the content inside such container. So, the content inside fixed-width containers is moved away from the edges of the page, and will be useful whenever we wish to have navigation bars and other contents centered.
+
+## Adding Introductory Content
+
+We'll consider accessibility and visuals at the same time.
+First, we'll change the title of the page, which is found inside of the `head` element. Change it to anything you'd like to be shown on the title bar of your browser window.
+Then, we'll delete the `h1` element found after the opening `<body>` tag. Here's the code after the changes were made:
+
+
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Omega AI Help Desk System</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+~~~
+
+
+Next, we will add a `div` element whose class attribute value will be `container-fluid`, so that we have a container that will stretch across the width of the viewport. It will be added immediately after the opening body tag:
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Omega AI Help Desk System</title>
+  </head>
+
+  <body>
+<div class="container-fluid">
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+~~~
+
+Next, we need some introductory content for our page. In particular, we'd like a main page header that extends acros the top. It should contain the title of the page / app, along with some navigation links. It should also be accessible, and, if possible, we'd like to have the contents of the navigation bar to be centered using HTML class attribute values.
+
+We know, by the table  that shows the default CSS values for HTML elements, that the `header` element has a display block value. This means that it will stretch across the width of our fluid container, and it will have some space above and below it. Also, the header element has a role of `banner`, which screen readers will announce as such. Let's add this `header` element to our fluid container. Here's an example of what you should have so far:
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Omega AI Help Desk System</title>
+  </head>
+
+  <body>
+<div class="container-fluid">
+<header>
+
+</header>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+~~~
+
+Next, we'd like to add a primary navigation bar to the header. It should have the title of our application or site styled as text for our business brand. As stated previously, we'd like our navigation bar to be centered. How can we accomplish this?
+
+We begin by adding a `nav` element to our header. Then, the brand should be added to the navigation bar. Bootstrap has a `navbar` component. For the purposes of this chapter, we'll also use a dark theme, as well as a primary navigation theme.
+Furthermore, we'll ad an aria attribute: `aria-label="Primary"`. This way, screen readers will announce it as "Primary navigation," because it will encounter the value set on the `aria-label` element, and it will also encounter the `role="navigation"` attribute, which is the default accessible role of `nav` elements.
+For the brand text, the best approach is to use a `span` element.
+Bootstrap allows anker elements (links, that is), to be styled as brand text. However, screen readers will announce this as a link as they ovbiously should. We don't want our users to be confused and click on something that is supposed to just be there for visual purposes. So, we choose a span.
+(Note that we could have chosen heading elements, but Bootstrap provides styles for headings by default, and we'd like to avoid disruptions that would require skills we haven't learned yet to fix those disruptions.)
+Finally, we will wrap our `nav` element inside a container to center it.
+Here's our code after adding the navigation bar wrapped in a container, with brand text, and an aria label:
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Omega AI Help Desk System</title>
+  </head>
+
+  <body>
+<div class="container-fluid">
+<header>
+<div class="container">
+<nav class="navbar navbar-dark bg-primary" aria-label="Primary">
+<span class="navbar-brand mb-0 h1">Omega AI Help Desk System</span>
+</nav>
+</div>
+</header>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+~~~
+
+Finally, we need to add an unordered list with the items that will provide navigation links for the most important sections of our application or site.
+Here is the code after making that addition:
+
+~~~
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Omega AI Help Desk System</title>
+  </head>
+
+  <body>
+<div class="container-fluid">
+<header>
+<div class="container">
+<nav class="navbar navbar-dark bg-primary" aria-label="Primary">
+<span class="navbar-brand mb-0 h1">Omega AI Help Desk System</span>
+<ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+
+    </ul>
+</nav>
+</div>
+</header>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+~~~
+
+Here's the result of our code so far as a rendered page:
+
+
+
+`r knitr::include_url("ch5/introductory1.html", height="450px")`
