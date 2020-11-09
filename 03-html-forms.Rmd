@@ -144,7 +144,7 @@ To add options to a Combo box, you begin with `<option value="">`, followed by s
 The following is an example of a Combo box:
 
 ~~~
-<label for="ingredients">Choose Pozza ingredients</label>
+<label for="ingredients">Choose Pizza ingredients</label>
 <select id="ingredients">
 <option value="pepperoni">Pepperoni</option>
 <option value="ham>Ham</option>
@@ -155,7 +155,7 @@ The following is an example of a Combo box:
 ## Control Groups
 
 There are cases in which check boxes need to be grouped together within a form. Set fields are used for this.
-As weith other elements, we begin with its opening tag, followed by a heading that with instructions for the controls to be grouped, followed by the controls and their labels, followed by the closing tag.
+As with other elements, we begin with its opening tag, followed by a heading that with instructions for the controls to be grouped, followed by the controls and their labels, followed by the closing tag.
 To add a heading at the top of our field set, we use `<legend>` `</legend>`.
 Here's an example:
 
@@ -175,7 +175,7 @@ Here's an example:
 
 The `name` attribute indicates that we want the elements with that attribute to have a relationship, not just a visual grouping of those elements.
 
-## Text Areass and Editable Elements
+## Text Areas and Editable Elements
 
 Text areas allow users to enter multiple lines of text.
 It has an opening tag, `<textarea>`, and a closing tag, `</textarea>`.
@@ -219,7 +219,7 @@ Here is a short example:
 <input id="fullname" type="text" required/>
 ~~~
 
-Adding the `required` attribute, along with an asterisk at the beginning of the label, increases the accessibility of forms. Screen readers will be able to work with this pattern seemlessly.
+Adding the `required` attribute, along with an asterisk at the beginning of the label, increases the accessibility of forms. Screen readers will be able to work with this pattern seamlessly.
 
 ## Summary
 

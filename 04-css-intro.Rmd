@@ -51,7 +51,7 @@ A border is the set of lines drawn on each side of a box. We can specify how thi
 
 ### Display{-}
 
-When we talk about an element's display value, we are reffering to how an element should behave when placed on a web page.
+When we talk about an element's display value, we are referring to how an element should behave when placed on a web page.
 Some of the common options that can be set on an HTML element as display values include:
 
 * Display block:
@@ -107,5 +107,5 @@ Click the address below to access it:
 
 This source also talks about other properties that we'll study later on in this chapter. Make sure you save it somewhere, just in case you need to refer to it later on.
 In fact, we recommend you study it before continuing on to the next section. If you are completely blind, this is definitely something to keep in your toolbox.
-Also, make sure to take a break if you need it; there were lots of moving parts in this section, so we recommend that you recharge, so yu can continue to the next section.
+Also, make sure to take a break if you need it; there were lots of moving parts in this section, so we recommend that you recharge, so you can continue to the next section.
 

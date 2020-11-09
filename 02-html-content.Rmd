@@ -2,7 +2,7 @@
 
 In this chapter, we introduce HTML elements, and we give descriptions and examples for those elements designed to hold a particular type of content.
 
-## Introdduction to the Structure of HTML
+## Introduction to the Structure of HTML
 
 HTML is composed of tags and attributes. Tags and attributes both make up HTML elements. The tags of an HTML element tell a web browser what we would like to have displayed on a web page. Attributes are qualities about a particular element. They add information to an HTML element, making HTML tags more powerful.
 
