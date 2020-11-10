@@ -4,7 +4,7 @@ A CSS framework is a library of CSS code that allows us to create sites and appl
 Before we do so, however, we'd like to make two cases for CSS frameworks: One is the case for frameworks from the point of a software developer, and the other case will target those of us who are completely blind.
 We hope this chapter will be as exciting to you as it is to us.
 Also, we are introducing frameworks now so you can get started developing the visuals for your applications with a high level of confidence.
-Finally, this is a hands-on chapter, so hopefully you can find some time to follow along, thiugh in many cases, some steps will show the code you should have up to that point, as well as a frame that shows the live version of the document.
+Finally, this is a hands-on chapter, so hopefully you can find some time to follow along, though in many cases, some steps will show the code you should have up to that point, as well as a frame that shows the live version of the document.
 
 ## Aside: The Difference Between Developers and Designers
 
@@ -14,7 +14,7 @@ Furthermore, a user interface is what is displayed on screen: buttons, check box
 
 ## A Developer's Case for Using CSS Frameworks
 
-Sometimes, a developer may not have access to a designer, or he / she is on a tight budget. Furthermore, developers need to deliver quickly, and there is no time to design the components that are displayed on the screen. CSS frameworks aid in mitigating the issues posed by these types of scenarioes and situations. As with any business, time is money, and applications need to be developed quickly. Developers can use the components included in the framework.
+Sometimes, a developer may not have access to a designer, or he / she is on a tight budget. Furthermore, developers need to deliver quickly, and there is no time to design the components that are displayed on the screen. CSS frameworks aid in mitigating the issues posed by these types of scenarios and situations. As with any business, time is money, and applications need to be developed quickly. Developers can use the components included in the framework.
 
 Frameworks can also be used for prototyping a piece of software. They are a great tool to have a proof of concept that developers can showcase. Finally, frameworks reduce the amount of code a developer has to test, since frameworks are tested by their respective developers.
 
@@ -44,7 +44,7 @@ You may also create a folder named `chapter05-examples`. Once you have Visual St
 This will bring up a dialog that will help you navigate and open the folder you created a moment ago.
 Once you find it, tab over to the "select" button and press Enter to open the folder.
 You are now ready to press either Control +n or Command + n to open a new file.
-Save it as `index.html`, since this will be recognized by your web browser of choice as being the first page of your site or application. (In fact, all sites and aplications have an `index.html` file.) Finally, we'd like you to have opened the web page containing the default CSS values, which was given to you at the end of the previous chapter.
+Save it as `index.html`, since this will be recognized by your web browser of choice as being the first page of your site or application. (In fact, all sites and applications have an `index.html` file.) Finally, we'd like you to have opened the web page containing the default CSS values, which was given to you at the end of the previous chapter.
 Here it is once more:
 
 [https://www.w3schools.com/cssref/css_default_values.asp](https://www.w3schools.com/cssref/css_default_values.asp)
@@ -55,7 +55,7 @@ Assuming you have the Bootstrap documentation opened, find the heading labeled "
 (Users of JAWS and NVDA may press h to find this heading;
 VoiceOver users may press Control + Option + Command + h.)
 
-Let's keep reading untill we arrive at a button that reads "Copy."
+Let's keep reading until we arrive at a button that reads "Copy."
 Let's press Enter there. At this point, we are ready to return to Visual Studio Code and paste what we just copied.
 You should have the following code pasted on your editor:
 
@@ -86,7 +86,7 @@ You should have the following code pasted on your editor:
 
 ## Fluid and Fixed-width Containers
 
-Bootstrap has two types of containers. Fluid containers stretch across the width of the viewport. The viewport is the area of the browser window that is used to display a page. In other words, the viewport refers to the browser widnow minus the browser menus.
+Bootstrap has two types of containers. Fluid containers stretch across the width of the viewport. The viewport is the area of the browser window that is used to display a page. In other words, the viewport refers to the browser window minus the browser menus.
 
 Another type of container supported by bootstrap is fixed-width, which grows only when the screen size changes. This type of container also helps with centering the content inside such container. So, the content inside fixed-width containers is moved away from the edges of the page, and will be useful whenever we wish to have navigation bars and other contents centered.
 
@@ -153,7 +153,7 @@ Next, we will add a `div` element whose class attribute value will be `container
 </html>
 ~~~
 
-Next, we need some introductory content for our page. In particular, we'd like a main page header that extends acros the top. It should contain the title of the page / app, along with some navigation links. It should also be accessible, and, if possible, we'd like to have the contents of the navigation bar to be centered using HTML class attribute values.
+Next, we need some introductory content for our page. In particular, we'd like a main page header that extends across the top. It should contain the title of the page / app, along with some navigation links. It should also be accessible, and, if possible, we'd like to have the contents of the navigation bar to be centered using HTML class attribute values.
 
 We know, by the table  that shows the default CSS values for HTML elements, that the `header` element has a display block value. This means that it will stretch across the width of our fluid container, and it will have some space above and below it. Also, the header element has a role of `banner`, which screen readers will announce as such. Let's add this `header` element to our fluid container. Here's an example of what you should have so far:
 
@@ -193,7 +193,7 @@ Next, we'd like to add a primary navigation bar to the header. It should have th
 We begin by adding a `nav` element to our header. Then, the brand should be added to the navigation bar. Bootstrap has a `navbar` component. For the purposes of this chapter, we'll also use a dark theme, as well as a primary navigation theme.
 Furthermore, we'll ad an aria attribute: `aria-label="Primary"`. This way, screen readers will announce it as "Primary navigation," because it will encounter the value set on the `aria-label` element, and it will also encounter the `role="navigation"` attribute, which is the default accessible role of `nav` elements.
 For the brand text, the best approach is to use a `span` element.
-Bootstrap allows anker elements (links, that is), to be styled as brand text. However, screen readers will announce this as a link as they ovbiously should. We don't want our users to be confused and click on something that is supposed to just be there for visual purposes. So, we choose a span.
+Bootstrap allows anker elements (links, that is), to be styled as brand text. However, screen readers will announce this as a link as they obviously should. We don't want our users to be confused and click on something that is supposed to just be there for visual purposes. So, we choose a span.
 (Note that we could have chosen heading elements, but Bootstrap provides styles for headings by default, and we'd like to avoid disruptions that would require skills we haven't learned yet to fix those disruptions.)
 Finally, we will wrap our `nav` element inside a container to center it.
 Here's our code after adding the navigation bar wrapped in a container, with brand text, and an aria label:

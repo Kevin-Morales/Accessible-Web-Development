@@ -4,7 +4,7 @@
 
 We begin our journey into web development by introducing the concept of the web, and why it was invented. We will then continue with some context for today's ecosystem of development tools such as build utilities, version control systems, and the tools found in modern browsers that aid in the development of web applications. In this chapter, we will also discuss a few web frameworks that are widely used today, and hopefully it will give you a glimpse of what you can expect to learn as chapters are added to this book. We'll then look at what you need to install on your computer to get started developing websites and applications.
 
-## A BriefHistory of the Web
+## A Brief History of the Web
 
 It all began with sir Tim Berners-Lee, a British computer scientist. He began by envisioning a way in which scientific research could be shared easily; at the time, documents were not accessible from one computer to another. Thus, he thought of the idea of the World Wide Web, and the HyperText Markup Language in particular.
 	In the year 1990, Tim Berners-Lee invented the language HTML, the HyperText protocol (which is a convention used to transfer HTML from one computer to another), and HTML editors and a browser, as well as a web server.
